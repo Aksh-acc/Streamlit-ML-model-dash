@@ -33,6 +33,7 @@ with st.sidebar:
     petal_width_in_cm = st.slider('PetalWidthCm', 0.1, 2.5, 1.3)
 
     data = {
+        'Id': 0,
         'SepalLengthCm': sepal_length_in_cm,
         'SepalWidthCm': sepal_width_in_cm,
         'PetalLengthCm': petal_length_in_cm,
