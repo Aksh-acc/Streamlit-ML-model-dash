@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
+
 st.title('Machine Learning prediction dash')
 st.info('This is a machine learing model app where you can get the insights from the data and get the predictions along with')
 df = pd.read_csv('https://raw.githubusercontent.com/Aksh-acc/Streamlit-ML-model-dash/refs/heads/master/Iris.csv')
@@ -14,9 +14,13 @@ with st.expander("data"):
   y = df.Species
   y
 with st.expander("Data Visualization"):
-  plt.scatter(X, y, s=None, c=None, marker=None, cmap=None, norm=None, vmin=None, vmax=None, alpha=None,
-                            linewidths=None, edgecolors=None, colorizer=Species, plotnonfinite=False, data=None, **kwargs)
-
+    st.scatter_chart(
+    data -=df,
+    x=X,
+    y=y,
+    color='Species,
+)
+  
 with st.sidebar:
   sepal_length_in_cm 	 =st.slider('sepal_length_in_cm' ,4.30 ,7.90 ,5.80)
   sepal_width_in_cm 	 =st.slider('sepal_width_in_cm' ,2.00 ,4.40 ,3.00)
