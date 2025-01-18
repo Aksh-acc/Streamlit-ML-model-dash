@@ -14,7 +14,7 @@ with st.expander("data"):
   y = df.Species
   y
 with st.expander("Data Visualization"):
-    st.scatter_chart(
+    st.altair_chart(
     data = df,
     x=X,
     y=y,
