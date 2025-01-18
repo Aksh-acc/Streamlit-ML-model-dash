@@ -13,12 +13,12 @@ with st.expander("data"):
   st.write('**Y value**')
   y = df.Species
   y
-with st.expander("Data Visualization"):
-    st.altair_chart(
-    data = df,
-    x=X,
-    y=y,
-    color='Species')
+# with st.expander("Data Visualization"):
+#     st.altair_chart(
+#     data = df,
+#     x=X,
+#     y=y,
+#     color='Species')
   
 with st.sidebar:
   sepal_length_in_cm 	 =st.slider('sepal_length_in_cm' ,4.30 ,7.90 ,5.80)
@@ -33,7 +33,7 @@ with st.sidebar:
    ' petal_width':petal_width_in_cm
   }
   input_df =pd.DataFrame(data ,index =[1])
-  input_df
+input_df
   
 from sklearn import model_selection 
 from sklearn.metrics import classification_report
@@ -53,4 +53,25 @@ models.append(('KNN', KNeighborsClassifier()))
 models.append (("CART", DecisionTreeClassifier()))
 models.append (('NB', GaussianNB()))
 models.append (('SVM', SVC())) 
+
+# X_train ,X_test ,y_train ,y_test  =model_selection.train_test_split(X ,y ,test_size =0.2 ,random_state =6)
+# names =[]
+# predictions =[]
+# model=[]
+# for name , model in models :
+#   kfold = model_selection.KFold(n_splits = 10  )
+#     cv_result = model_selection.cross_val_score(model  , X_train , Y_train , cv = kfold , scoring = scoring)
+#     results.append(cv_result)
+#     names.append(name)
+#     predictions.append("%s: %f (%f) " %(name , cv_result.mean() , cv_result.std()))
+# # print("names:" ,names) 
+# # print(msg)
+# parsed_data = []
+# for item in predictions:
+#     model, values = item.split(":")
+#     accuracy = float(values.split()[0])
+#     parsed_data.append((model.strip(), accuracy))
+
+# # Sort the data in descending order based on accuracy
+# sorted_data = sorted(parsed_data, key=lambda x: x[1], reverse=True)
 
