@@ -10,7 +10,7 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import SVC
 
 # Title and Info
-st.title('Machine Learning Prediction Dashboard')
+st.title('🤖 Machine Learning Prediction Dashboard')
 st.info('This is a machine learning model app where you can get insights from the data and make predictions.')
 
 # Load and display data
