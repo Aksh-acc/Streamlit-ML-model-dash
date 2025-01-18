@@ -27,10 +27,10 @@ with st.expander("Data"):
 
 # Sidebar sliders for input
 with st.sidebar:
-    sepal_length_in_cm = st.slider('Sepal Length (cm)', 4.3, 7.9, 5.8)
-    sepal_width_in_cm = st.slider('Sepal Width (cm)', 2.0, 4.4, 3.0)
-    petal_length_in_cm = st.slider('Petal Length (cm)', 1.0, 6.9, 4.35)
-    petal_width_in_cm = st.slider('Petal Width (cm)', 0.1, 2.5, 1.3)
+    sepal_length_in_cm = st.slider('SepalLengthCm', 4.3, 7.9, 5.8)
+    sepal_width_in_cm = st.slider('SepalWidthCm', 2.0, 4.4, 3.0)
+    petal_length_in_cm = st.slider('PetalLengthCm', 1.0, 6.9, 4.35)
+    petal_width_in_cm = st.slider('PetalWidthCm', 0.1, 2.5, 1.3)
 
     data = {
         'sepal_length': sepal_length_in_cm,
