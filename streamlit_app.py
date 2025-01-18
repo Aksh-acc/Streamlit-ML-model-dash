@@ -39,7 +39,7 @@ with st.sidebar:
         'PetalWidthCm': petal_width_in_cm
     }
     input_df = pd.DataFrame(data, index=[0])
-
+input_df = input_df[X.columns]
 st.write('**Input Data Values**')
 st.write(input_df)
 
