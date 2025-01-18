@@ -13,12 +13,12 @@ with st.expander("data"):
   st.write('**Y value**')
   y = df.Species
   y
-# with st.expander("Data Visualization"):
-#     st.scatter_chart(
-#     data =df,
-#     x=X,
-#     y=y,
-#     color='Species')
+with st.expander("Data Visualization"):
+    st.scatter_chart(
+    data = df,
+    x=X,
+    y=y,
+    color='Species')
   
 with st.sidebar:
   sepal_length_in_cm 	 =st.slider('sepal_length_in_cm' ,4.30 ,7.90 ,5.80)
