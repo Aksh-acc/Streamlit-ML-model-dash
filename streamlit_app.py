@@ -12,6 +12,9 @@ with st.expander("data"):
   st.write('**Y value**')
   y = df.Species
   y
+with st.expander("Data Visualization"):
+  matplotlib.pyplot.scatter(X, y, s=None, c=None, *, marker=None, cmap=None, norm=None, vmin=None, vmax=None, alpha=None,
+                            linewidths=None, edgecolors=None, colorizer=Species, plotnonfinite=False, data=None, **kwargs)
 
 with st.sidebar:
   sepal_length_in_cm 	 =st.slider('sepal_length_in_cm' ,4.30 ,7.90 ,5.80)
@@ -27,7 +30,7 @@ with st.sidebar:
   }
   input_df =pd.DataFrame(data ,index =[1])
   input_df
-    
+  
 from sklearn import model_selection 
 from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix 
