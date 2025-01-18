@@ -15,7 +15,7 @@ with st.expander("data"):
   y
 with st.expander("Data Visualization"):
     st.scatter_chart(
-    data -=df,
+    data =df,
     x=X,
     y=y,
     color='Species',
