@@ -18,7 +18,7 @@ with st.expander("Data Visualization"):
     data -=df,
     x=X,
     y=y,
-    color='Species,
+    color='Species',
 )
   
 with st.sidebar:
