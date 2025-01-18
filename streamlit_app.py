@@ -81,7 +81,12 @@ for model_name, model_instance in models:
 if final_model:
     final_model.fit(X_train, y_train)
     prediction = final_model.predict(input_df)
+    prediction_proba =final_model.predict_proba(input_df)
+    df_prediction_proba =pd.DataFrame(prediction_proba)
+    df_prediction_proba.columns =['Iris-setosa' ,'Iris-versicolor' , 'Iris-virginica']
+    df_prediction_proba.rename(columns ={ 0: 'Iris-setosa' ,1: 'Iris-versicolor' , 2:'Iris-virginica'})
+    
     st.write('**Prediction**')
-    st.write(prediction)
+    st.success(prediction)
 else:
     st.error("No model selected.")
