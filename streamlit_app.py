@@ -61,7 +61,7 @@ predictions =[]
 model=[]
 for name , model in models :
   kfold = model_selection.KFold(n_splits = 10  )
-  cv_result = model_selection.cross_val_score(model  , X_train , Y_train , cv = kfold , scoring = scoring)
+  cv_result = model_selection.cross_val_score(model  , X_train , y_train , cv = kfold , scoring = scoring)
   results.append(cv_result)
   names.append(name)
   predictions.append("%s: %f (%f) " %(name , cv_result.mean() , cv_result.std()))
