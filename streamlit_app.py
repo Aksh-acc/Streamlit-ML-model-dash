@@ -19,7 +19,7 @@ with st.expander("Data"):
     st.write('**Raw Data**')
     st.write(df)
     st.write('**X Values**')
-    X = df.drop(['Species' ,'Id'], axis=1)
+    X = df.drop(['Species', 'Id'], axis=1)
     st.write(X)
     st.write('**Y Values**')
     y = df['Species']
@@ -39,7 +39,10 @@ with st.sidebar:
         'PetalWidthCm': petal_width_in_cm
     }
     input_df = pd.DataFrame(data, index=[0])
+
+# Ensure input_df columns match X
 input_df = input_df[X.columns]
+
 st.write('**Input Data Values**')
 st.write(input_df)
 
