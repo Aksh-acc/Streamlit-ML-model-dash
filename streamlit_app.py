@@ -18,8 +18,7 @@ with st.expander("Data Visualization"):
     data =df,
     x=X,
     y=y,
-    color='Species',
-)
+    color='Species')
   
 with st.sidebar:
   sepal_length_in_cm 	 =st.slider('sepal_length_in_cm' ,4.30 ,7.90 ,5.80)
