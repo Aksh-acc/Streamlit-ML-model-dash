@@ -1,13 +1,13 @@
-# 📦 Streamlit App Starter Kit 
+# 🤖 Machine learning dashboard
 ```
 ⬆️ (Replace above with your app's name)
 ```
 
-Description of the app ...
+This is a dashboard to display insights and predictionns from a machine learning model
 
 ## Demo App
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://app-starter-kit.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://Streamlit-ML-model-dash.streamlit.app/)
 
 ## GitHub Codespaces
 
