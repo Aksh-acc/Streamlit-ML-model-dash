@@ -33,10 +33,10 @@ with st.sidebar:
     petal_width_in_cm = st.slider('PetalWidthCm', 0.1, 2.5, 1.3)
 
     data = {
-        'sepal_length': sepal_length_in_cm,
-        'sepal_width': sepal_width_in_cm,
-        'petal_length': petal_length_in_cm,
-        'petal_width': petal_width_in_cm
+        'SepalLengthCm': sepal_length_in_cm,
+        'SepalWidthCm': sepal_width_in_cm,
+        'PetalLengthCm': petal_length_in_cm,
+        'PetalWidthCm': petal_width_in_cm
     }
     input_df = pd.DataFrame(data, index=[0])
 
