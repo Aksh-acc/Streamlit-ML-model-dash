@@ -74,7 +74,7 @@ for model_name, model_instance in models:
         final_model = model_instance
         break
 
-# Train and predict
+# Train and predict 
 if final_model:
     final_model.fit(X_train, y_train)
     prediction = final_model.predict(input_df)
