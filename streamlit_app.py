@@ -19,7 +19,7 @@ with st.expander("Data"):
     st.write('**Raw Data**')
     st.write(df)
     st.write('**X Values**')
-    X = df.drop('Species', axis=1)
+    X = df.drop(['Species' ,'Id'], axis=1)
     st.write(X)
     st.write('**Y Values**')
     y = df['Species']
@@ -33,7 +33,6 @@ with st.sidebar:
     petal_width_in_cm = st.slider('PetalWidthCm', 0.1, 2.5, 1.3)
 
     data = {
-        'Id':'0',
         'SepalLengthCm': sepal_length_in_cm,
         'SepalWidthCm': sepal_width_in_cm,
         'PetalLengthCm': petal_length_in_cm,
