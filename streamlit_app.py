@@ -32,7 +32,7 @@ with st.sidebar:
     'petal_length' : petal_length_in_cm ,	
    ' petal_width':petal_width_in_cm
   }
-  input_df =pd.DataFrame(data ,index =[None])
+  input_df =pd.DataFrame(data ,index =[0])
 st.write('**Input data Values**')
 input_df 
   
