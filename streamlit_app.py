@@ -13,7 +13,7 @@ with st.expander("data"):
   y = df.Species
   y
 with st.expander("Data Visualization"):
-  matplotlib.pyplot.scatter(X, y, s=None, c=None, *, marker=None, cmap=None, norm=None, vmin=None, vmax=None, alpha=None,
+  matplotlib.pyplot.scatter(X, y, s=None, c=None, marker=None, cmap=None, norm=None, vmin=None, vmax=None, alpha=None,
                             linewidths=None, edgecolors=None, colorizer=Species, plotnonfinite=False, data=None, **kwargs)
 
 with st.sidebar:
