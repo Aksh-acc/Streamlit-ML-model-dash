@@ -12,8 +12,11 @@ from sklearn.svm import SVC
 # Title and Info
 st.title('🤖 Machine Learning Prediction Dashboard')
 st.info('This is a machine learning model app where you can get insights from the data and make predictions.')
-
-# Load and display data
+#upload your own custom dataset
+upload_file =st.file_uploader("Choose a csv file")
+dataframe = pd.read_csv(uploaded_file)
+st.write(dataframe)
+# Load and display  default dataset
 df = pd.read_csv('https://raw.githubusercontent.com/Aksh-acc/Streamlit-ML-model-dash/refs/heads/master/Iris.csv')
 with st.expander("Data"):
     st.write('**Raw Data**')
