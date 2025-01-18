@@ -32,8 +32,9 @@ with st.sidebar:
     'petal_length' : petal_length_in_cm ,	
    ' petal_width':petal_width_in_cm
   }
-  input_df =pd.DataFrame(data ,index =[1])
-input_df
+  input_df =pd.DataFrame(data)
+st.write('**Input data Values**')
+input_df 
   
 from sklearn import model_selection 
 from sklearn.metrics import classification_report
